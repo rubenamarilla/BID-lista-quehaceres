@@ -12,7 +12,7 @@ const FilaTareas = ({tarea, marcarTarea, eliminarTarea}) => {
   return (
         <div>
             <input type="checkbox" name="tachar" checked={tarea.hecho} onChange={() => marcarTarea(tarea)} />
-            <span>{ tarea.nombre }</span>
+            <span style={{ textDecoration: tarea.hecho && 'line-through' }}>{ tarea.nombre }</span>
             <button onClick={eliminar} >Eliminar</button>
         </div>
     )
