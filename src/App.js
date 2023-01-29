@@ -9,7 +9,6 @@ function App() {
       nombre: "Esta es una tarea de ejemplo", hecho: false
     }
   ]);
-  const [mostrarCompletado, setMostrarCompletado] = useState(false);
 
   const crearTarea = (nombreTarea) => {
     if (!listarTarea.find((tarea) => tarea.nombre === nombreTarea)) {
